@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Matemáticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Matemáticas</h1>
+        <img src="logo.png" alt="Logo del juego" class="logo">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" placeholder="Ingrese su nombre" required>
+        <button id="startButton">Comenzar</button>
+        
+        <div id="gameArea" style="display: none;">
+            <p>Nombre: <span id="playerName"></span></p>
+            <p>Puntaje: <span id="score">0</span></p>
+            <p>Puntaje Máximo: <span id="highScore">0</span></p>
+            <p>Pregunta: <span id="question"></span></p>
+            <label for="answer">Respuesta:</label>
+            <input type="number" id="answer" placeholder="Ingrese su respuesta" required>
+            <button id="submitAnswerButton">Responder</button>
+            <p id="feedback"></p>
+            <img id="fruitImage" class="fruit-image" style="display: none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
